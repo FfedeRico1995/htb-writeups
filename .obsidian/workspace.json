@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "141ae4bc545e526c",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7060f5493ec047a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58d95b69a8062d1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tier 2/Oopsie.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Oopsie"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3f512f0d29c5e258",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb7875a3fb44514b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9d6271e2d590ab6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b94bd539b717fdcd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ce23db498164242e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1ccaa6ccf1ec8e78",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0171fb2fdd1d5a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "944e44ba96a6e627",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tier 2/Archetype.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Archetype"
+            }
+          },
+          {
+            "id": "9b63ddfff7f56dec",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tier 2/Archetype.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Archetype"
+            }
+          },
+          {
+            "id": "f0f654bca60ea506",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cd8d714cb9a85e10",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "49ff2f4dd1b11cab",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tier 2/Archetype.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Archetype"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "58d95b69a8062d1a",
+  "lastOpenFiles": [
+    "Tier 2/oopsie_writeup.docx",
+    "Pasted image 20260409211718.png",
+    "Pasted image 20260409205544.png",
+    "Pasted image 20260409204807.png",
+    "Pasted image 20260409203228.png",
+    "Season 10/Facts Machine.md",
+    "Tier 2/Oopsie.md",
+    "Pasted image 20260408221802.png",
+    "Pasted image 20260408220429.png",
+    "Pasted image 20260408214812.png",
+    "Tier 2/Archetype.md",
+    "Season 10",
+    "Tier 2"
+  ]
+}
